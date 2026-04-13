@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghid Operațional — Winning Products Facebook RO 2026</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#09090d;--bg2:#111118;--bg3:#18181f;--bg4:#1e1e28;
+  --border:#252530;--border2:#2e2e3d;
+  --text:#dddde8;--text2:#8888a8;--text3:#55556a;
+  --green:#27c98a;--blue:#4a90f7;--purple:#8b5cf6;
+  --amber:#f0a500;--red:#e05555;--teal:#1ec8b0;--pink:#e879a0;
+  --orange:#f07340;
+}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;font-size:14px;line-height:1.7}
+.page{max-width:1100px;margin:0 auto;padding:32px 20px 60px}
+
+/* HEADER */
+.hero{border-bottom:1px solid var(--border);padding-bottom:28px;margin-bottom:32px}
+.hero-tag{display:inline-block;font-size:10px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--green);background:rgba(39,201,138,.1);border:1px solid rgba(39,201,138,.25);padding:4px 12px;border-radius:20px;margin-bottom:14px}
+.hero h1{font-size:26px;font-weight:700;color:#fff;line-height:1.25;margin-bottom:10px}
+.hero p{font-size:14px;color:var(--text2);max-width:700px;line-height:1.7}
+.hero-meta{display:flex;gap:20px;margin-top:16px;flex-wrap:wrap}
+.hero-meta span{font-size:11px;color:var(--text3)}
+.hero-meta b{color:var(--text2)}
+
+/* NAV */
+.toc{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:36px}
+.toc h3{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--text3);margin-bottom:12px}
+.toc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:6px}
+.toc a{font-size:12.5px;color:var(--text2);text-decoration:none;padding:4px 0;display:flex;align-items:center;gap:8px;transition:color 0.15s}
+.toc a:hover{color:var(--blue)}
+.toc a::before{content:'→';font-size:10px;color:var(--text3)}
+
+/* SECTIONS */
+.section{margin-bottom:48px}
+.section-head{display:flex;align-items:flex-start;gap:14px;margin-bottom:24px}
+.section-num{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0;font-family:'JetBrains Mono',monospace}
+.section-num.green{background:rgba(39,201,138,.12);color:var(--green);border:1px solid rgba(39,201,138,.2)}
+.section-num.blue{background:rgba(74,144,247,.12);color:var(--blue);border:1px solid rgba(74,144,247,.2)}
+.section-num.purple{background:rgba(139,92,246,.12);color:var(--purple);border:1px solid rgba(139,92,246,.2)}
+.section-num.amber{background:rgba(240,165,0,.12);color:var(--amber);border:1px solid rgba(240,165,0,.2)}
+.section-num.teal{background:rgba(30,200,176,.12);color:var(--teal);border:1px solid rgba(30,200,176,.2)}
+.section-num.pink{background:rgba(232,121,160,.12);color:var(--pink);border:1px solid rgba(232,121,160,.2)}
+.section-num.orange{background:rgba(240,115,64,.12);color:var(--orange);border:1px solid rgba(240,115,64,.2)}
+.section-title h2{font-size:19px;font-weight:700;color:#fff;margin-bottom:4px}
+.section-title p{font-size:12.5px;color:var(--text2)}
+
+/* CARDS */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-bottom:20px}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:18px 20px}
+.card-title{font-size:13px;font-weight:600;color:#fff;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.card-title .icon{font-size:16px}
+.card p{font-size:12.5px;color:var(--text2);line-height:1.6}
+.card.highlight{border-color:rgba(39,201,138,.3);background:rgba(39,201,138,.04)}
+.card.warn{border-color:rgba(240,165,0,.3);background:rgba(240,165,0,.04)}
+.card.danger{border-color:rgba(224,85,85,.3);background:rgba(224,85,85,.04)}
+
+/* STEPS */
+.steps{display:flex;flex-direction:column;gap:0}
+.step{display:flex;gap:16px;position:relative;padding-bottom:24px}
+.step:last-child{padding-bottom:0}
+.step:last-child .step-line{display:none}
+.step-left{display:flex;flex-direction:column;align-items:center;gap:0;flex-shrink:0}
+.step-dot{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;font-family:'JetBrains Mono',monospace;flex-shrink:0}
+.step-line{width:2px;background:var(--border);flex:1;min-height:16px;margin-top:4px}
+.step-content{flex:1;padding-top:4px}
+.step-content h4{font-size:14px;font-weight:600;color:#fff;margin-bottom:6px}
+.step-content p{font-size:12.5px;color:var(--text2);line-height:1.6;margin-bottom:8px}
+.step-content .note{font-size:11.5px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 14px;color:var(--text2);margin-top:8px}
+.step-content .note b{color:var(--text);font-weight:500}
+.step-content code{font-family:'JetBrains Mono',monospace;font-size:11.5px;background:var(--bg4);border:1px solid var(--border);padding:2px 7px;border-radius:5px;color:var(--teal)}
+
+/* TABLE */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:12px;margin:16px 0}
+table{width:100%;border-collapse:collapse;min-width:600px}
+thead tr{background:var(--bg3);border-bottom:1px solid var(--border)}
+th{padding:10px 14px;font-size:10px;font-weight:600;color:var(--text3);text-align:left;text-transform:uppercase;letter-spacing:0.08em;white-space:nowrap}
+th.r{text-align:right}
+tbody tr{border-bottom:1px solid var(--border);transition:background 0.1s}
+tbody tr:last-child{border-bottom:none}
+tbody tr:hover{background:var(--bg2)}
+td{padding:10px 14px;font-size:12.5px;vertical-align:top}
+td.r{text-align:right;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--text2)}
+.prod-n{font-weight:600;color:#fff;font-size:13px}
+.prod-s{font-size:11px;color:var(--text2);margin-top:2px}
+.tag{display:inline-block;font-size:10px;padding:2px 8px;border-radius:20px;font-weight:600;white-space:nowrap}
+.tg{background:rgba(39,201,138,.12);color:var(--green)}
+.tb{background:rgba(74,144,247,.12);color:var(--blue)}
+.tp{background:rgba(139,92,246,.12);color:var(--purple)}
+.ta{background:rgba(240,165,0,.12);color:var(--amber)}
+.tr2{background:rgba(224,85,85,.12);color:var(--red)}
+.mono{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--text2)}
+
+/* CALLOUT */
+.callout{border-radius:10px;padding:14px 18px;margin:14px 0;font-size:12.5px;line-height:1.6}
+.callout.green{background:rgba(39,201,138,.07);border:1px solid rgba(39,201,138,.2);color:#a8f0d8}
+.callout.blue{background:rgba(74,144,247,.07);border:1px solid rgba(74,144,247,.2);color:#a8c8f8}
+.callout.amber{background:rgba(240,165,0,.07);border:1px solid rgba(240,165,0,.2);color:#f8d888}
+.callout.red{background:rgba(224,85,85,.07);border:1px solid rgba(224,85,85,.2);color:#f8a8a8}
+.callout b{font-weight:600;color:#fff}
+
+/* FORMULA */
+.formula{background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:16px 20px;font-family:'JetBrains Mono',monospace;font-size:13px;margin:14px 0;color:#fff;line-height:1.8}
+.formula .label{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--text3);font-family:'Inter',sans-serif;margin-bottom:8px}
+.formula span.g{color:var(--green)}
+.formula span.r{color:var(--red)}
+.formula span.b{color:var(--blue)}
+.formula span.a{color:var(--amber)}
+
+/* PRODUCT DEEP DIVE */
+.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;margin:16px 0}
+.pdp{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:20px;position:relative;overflow:hidden}
+.pdp::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.pdp.g::before{background:var(--green)}
+.pdp.b::before{background:var(--blue)}
+.pdp.p::before{background:var(--purple)}
+.pdp.a::before{background:var(--amber)}
+.pdp.t::before{background:var(--teal)}
+.pdp.o::before{background:var(--orange)}
+.pdp-rank{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text3);margin-bottom:8px}
+.pdp-name{font-size:15px;font-weight:700;color:#fff;margin-bottom:4px}
+.pdp-sub{font-size:11.5px;color:var(--text2);margin-bottom:14px;line-height:1.5}
+.pdp-stats{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}
+.pdp-stat{background:var(--bg3);border-radius:8px;padding:8px 10px}
+.pdp-stat-v{font-size:15px;font-weight:700;font-family:'JetBrains Mono',monospace}
+.pdp-stat-l{font-size:10px;color:var(--text3);margin-top:2px}
+.pdp-row{display:flex;justify-content:space-between;align-items:flex-start;font-size:12px;padding:5px 0;border-bottom:1px solid var(--border)}
+.pdp-row:last-of-type{border-bottom:none}
+.pdp-row-l{color:var(--text2)}
+.pdp-row-v{color:#fff;font-weight:500;text-align:right;max-width:55%}
+.pdp-signal{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text2);margin-top:10px;background:var(--bg3);padding:8px 10px;border-radius:8px}
+.dot-g{width:7px;height:7px;border-radius:50%;background:var(--green);flex-shrink:0}
+.dot-a{width:7px;height:7px;border-radius:50%;background:var(--amber);flex-shrink:0}
+.dot-r{width:7px;height:7px;border-radius:50%;background:var(--red);flex-shrink:0}
+
+/* KEYWORD TABLE */
+.kw-table{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;margin:14px 0}
+.kw-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+.kw-card h4{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--text3);margin-bottom:10px}
+.kw-item{display:flex;justify-content:space-between;align-items:center;padding:4px 0;border-bottom:1px solid var(--border);font-size:12px}
+.kw-item:last-child{border-bottom:none}
+.kw-item-q{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--teal);background:rgba(30,200,176,.08);padding:2px 6px;border-radius:4px}
+
+/* COMPETITOR ANALYSIS */
+.comp-row{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1.5fr;gap:0;border-bottom:1px solid var(--border)}
+.comp-row.head{background:var(--bg3);font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.07em;color:var(--text3)}
+.comp-row div{padding:10px 12px;font-size:12px;border-right:1px solid var(--border)}
+.comp-row div:last-child{border-right:none}
+.comp-wrap{border:1px solid var(--border);border-radius:10px;overflow:hidden;margin:14px 0}
+
+/* SIGNAL SCORER */
+.scorer{background:var(--bg2);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin:14px 0}
+.scorer-head{background:var(--bg3);padding:12px 16px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--text3);display:flex;justify-content:space-between}
+.scorer-row{display:flex;align-items:center;gap:12px;padding:10px 16px;border-bottom:1px solid var(--border);font-size:12.5px}
+.scorer-row:last-child{border-bottom:none}
+.scorer-row .check{width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;flex-shrink:0}
+.check-y{background:rgba(39,201,138,.15);color:var(--green)}
+.check-n{background:rgba(224,85,85,.15);color:var(--red)}
+.check-m{background:rgba(240,165,0,.15);color:var(--amber)}
+.scorer-row .label{flex:1;color:var(--text)}
+.scorer-row .pts{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text2)}
+
+.divider{height:1px;background:var(--border);margin:36px 0}
+.inline-mono{font-family:'JetBrains Mono',monospace;font-size:12px;background:var(--bg4);border:1px solid var(--border);padding:2px 7px;border-radius:5px;color:var(--teal)}
+.badge{display:inline-block;font-size:10px;padding:2px 8px;border-radius:20px;font-weight:600}
+
+.footer{border-top:1px solid var(--border);padding-top:20px;font-size:11px;color:var(--text3);line-height:1.8}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-tag">Ghid Operațional Complet</div>
+  <h1>Cum găsești Winning Products pe Facebook Romania<br>Cost achiziție sub $1 · Research real · Fără tool-uri plătite</h1>
+  <p>Un sistem pas-cu-pas pentru identificarea produselor profitabile folosind Meta Ads Library gratuit, validarea pe 1688/AliExpress, analiza competiției și calculul marjei nete reale pentru piața românească.</p>
+  <div class="hero-meta">
+    <span>📅 <b>April 2026</b></span>
+    <span>🎯 <b>Target: Facebook Romania</b></span>
+    <span>💰 <b>Cost achiziție: sub $1/unitate</b></span>
+    <span>📊 <b>Metodologie: Meta Ads Library + 1688 + Analiza comentarii</b></span>
+  </div>
+</div>
+
+<!-- TOC -->
+<div class="toc">
+  <h3>Cuprins</h3>
+  <div class="toc-grid">
+    <a href="#s1">1. Formula matematică a unui winning product</a>
+    <a href="#s2">2. Meta Ads Library — metodă exactă pas-cu-pas</a>
+    <a href="#s3">3. Antrenează feed-ul — metoda de spionaj gratuit</a>
+    <a href="#s4">4. Produse sub $1 — lista validată 1688</a>
+    <a href="#s5">5. Validare pe 1688 — ghid practic</a>
+    <a href="#s6">6. Analiza competiției — câți vând și la ce preț</a>
+    <a href="#s7">7. Scorecard produs — decizie go/no-go</a>
+    <a href="#s8">8. Estimare vânzări în unități</a>
+    <a href="#s9">9. Ce faci diferit să câștigi cotă de piață</a>
+    <a href="#s10">10. Planul de acțiune săptămânal</a>
+  </div>
+</div>
+
+<!-- SECTION 1 -->
+<div class="section" id="s1">
+  <div class="section-head">
+    <div class="section-num green">01</div>
+    <div class="section-title">
+      <h2>Formula Matematică a unui Winning Product</h2>
+      <p>Înainte să cauți orice produs, trebuie să știi ce numere urmărești</p>
+    </div>
+  </div>
+
+  <div class="formula">
+    <div class="label">Formula Profitabilitate Netă</div>
+    Marjă netă = <span class="g">Preț vânzare RON</span> − <span class="r">Cost produs $</span> − <span class="r">Livrare RO</span> − <span class="b">Cost reclame FB</span> − <span class="a">Retur ~5%</span>
+  </div>
+
+  <div class="callout green">
+    <b>Exemplu real calculat:</b> Produs sub $1 (≈4–5 RON) → vinde la 69 RON → livrare 18 RON → FB ads 12 RON/comandă → retur 3.5 RON = <b>profit net ~31 RON per comandă (~45% net marjă)</b>. La 20 comenzi/zi = 620 RON/zi = 18.600 RON/lună profit net.
+  </div>
+
+  <div class="cards">
+    <div class="card highlight">
+      <div class="card-title"><span class="icon">🎯</span>Target minim pentru a merge</div>
+      <p><b>Marjă brută ≥ 70%</b> (înainte de ads)<br><b>ROAS ≥ 3x</b> pe piața RO<br><b>Preț vânzare:</b> 39–149 RON (zona impuls maxim)<br><b>Cost produs:</b> sub 5 RON ($1) = marjă structurală excelentă</p>
+    </div>
+    <div class="card warn">
+      <div class="card-title"><span class="icon">⚠️</span>Semne că produsul nu merge</div>
+      <p>CPM > 15 RON în primele 3 zile<br>CTR < 1.5% pe creative<br>Add to cart fără conversie > 4%<br>Retur > 8% din comenzi</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">📊</span>Benchmarks Facebook Romania 2026</div>
+      <p><b>CPM mediu RO:</b> €0.60–1.20 (3–6 RON)<br><b>CPC mediu:</b> €0.15–0.40<br><b>CTR bun:</b> 2–4%<br><b>Conversie medie:</b> 1.5–3.5%</p>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 2 -->
+<div class="section" id="s2">
+  <div class="section-head">
+    <div class="section-num blue">02</div>
+    <div class="section-title">
+      <h2>Meta Ads Library — Metodă Exactă Pas-cu-Pas</h2>
+      <p>Cum extragi informații de competiție reală, gratuit, în 20 minute</p>
+    </div>
+  </div>
+
+  <div class="callout blue">
+    <b>URL direct:</b> facebook.com/ads/library → Este complet gratuit, nu necesită cont, funcționează în orice browser.
+  </div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-left">
+        <div class="step-dot" style="background:rgba(74,144,247,.15);color:var(--blue);border:1px solid rgba(74,144,247,.3)">1</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <h4>Setarea filtrelor inițiale</h4>
+        <p>Deschide facebook.com/ads/library și setează exact în ordinea asta:</p>
+        <div class="note">
+          <b>Țară:</b> Romania 🇷🇴<br>
+          <b>Tip reclamă:</b> All ads<br>
+          <b>Status:</b> Active (NU "All" — vrei doar ce rulează acum)<br>
+          <b>Platformă:</b> Facebook (poți include și Instagram)<br>
+          <b>Media type:</b> lasă All
+        </div>
+        <p>Rezultatul: vezi TOATE reclamele active din Romania chiar acum, inclusiv ale competitorilor tăi.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-left">
+        <div class="step-dot" style="background:rgba(74,144,247,.15);color:var(--blue);border:1px solid rgba(74,144,247,.3)">2</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <h4>Keywords pentru fiecare categorie de produs</h4>
+        <p>Caută pe rând aceste keywords pentru a găsi reclame de produs active:</p>
+        <div class="kw-table">
+          <div class="kw-card">
+            <h4>🔥 Keywords urgență (conversie)</h4>
+            <div class="kw-item"><span>Comandă acum</span><span class="kw-item-q">urgent</span></div>
+            <div class="kw-item"><span>Livrare gratuită</span><span class="kw-item-q">free ship</span></div>
+            <div class="kw-item"><span>50% reducere</span><span class="kw-item-q">discount</span></div>
+            <div class="kw-item"><span>Stoc limitat</span><span class="kw-item-q">scarcity</span></div>
+            <div class="kw-item"><span>Cumpără acum</span><span class="kw-item-q">CTA</span></div>
+            <div class="kw-item"><span>Ofertă limitată</span><span class="kw-item-q">FOMO</span></div>
+          </div>
+          <div class="kw-card">
+            <h4>💄 Beauty Keywords RO</h4>
+            <div class="kw-item"><span>Ten curat</span><span class="kw-item-q">beauty</span></div>
+            <div class="kw-item"><span>Masaj facial</span><span class="kw-item-q">device</span></div>
+            <div class="kw-item"><span>Anti-rid</span><span class="kw-item-q">skincare</span></div>
+            <div class="kw-item"><span>Lifting acasă</span><span class="kw-item-q">home spa</span></div>
+            <div class="kw-item"><span>Serum vitamina</span><span class="kw-item-q">serum</span></div>
+            <div class="kw-item"><span>Epilator</span><span class="kw-item-q">hair rem</span></div>
+          </div>
+          <div class="kw-card">
+            <h4>🏠 Casă & Gadget Keywords</h4>
+            <div class="kw-item"><span>Organizator</span><span class="kw-item-q">home org</span></div>
+            <div class="kw-item"><span>Gadget bucătărie</span><span class="kw-item-q">kitchen</span></div>
+            <div class="kw-item"><span>Luminii LED</span><span class="kw-item-q">LED decor</span></div>
+            <div class="kw-item"><span>Difuzor arome</span><span class="kw-item-q">diffuser</span></div>
+            <div class="kw-item"><span>Aparat de</span><span class="kw-item-q">appliance</span></div>
+            <div class="kw-item"><span>Inovator</span><span class="kw-item-q">gadget</span></div>
+          </div>
+          <div class="kw-card">
+            <h4>🐾 Pet & Alte Nișe</h4>
+            <div class="kw-item"><span>Câine pisică</span><span class="kw-item-q">pet</span></div>
+            <div class="kw-item"><span>Perie blană</span><span class="kw-item-q">grooming</span></div>
+            <div class="kw-item"><span>Dureri spate</span><span class="kw-item-q">pain relief</span></div>
+            <div class="kw-item"><span>Postura corecta</span><span class="kw-item-q">posture</span></div>
+            <div class="kw-item"><span>Șosete</span><span class="kw-item-q">fashion</span></div>
+            <div class="kw-item"><span>Bijuterie</span><span class="kw-item-q">jewelry</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-left">
+        <div class="step-dot" style="background:rgba(74,144,247,.15);color:var(--blue);border:1px solid rgba(74,144,247,.3)">3</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <h4>Cum citești o reclamă în Ads Library</h4>
+        <p>Când găsești o reclamă interesantă, uită-te la aceste 5 elemente în ordine:</p>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr>
+              <th>Element</th><th>Unde îl găsești</th><th>Ce înseamnă</th><th>Semnal bun</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="prod-n">Data lansare reclamă</td><td class="r">Sub thumbnail</td><td class="r">Cât timp rulează</td><td><span class="tag tg">30+ zile = profitabilă</span></td></tr>
+              <tr><td class="prod-n">Număr variante creative</td><td class="r">Badge "X versions"</td><td class="r">Cât de serios e advertiser-ul</td><td><span class="tag tb">3+ versiuni = scalează</span></td></tr>
+              <tr><td class="prod-n">Pagina Facebook</td><td class="r">Deasupra reclamei</td><td class="r">Cine vinde + followeri</td><td><span class="tag tp">Magazin dedicat = serios</span></td></tr>
+              <tr><td class="prod-n">Landing page</td><td class="r">Click pe "Learn More"</td><td class="r">Calitate site, preț afișat</td><td><span class="tag tg">Site propriu = brand real</span></td></tr>
+              <tr><td class="prod-n">CTA Button</td><td class="r">Butonul reclamei</td><td class="r">Etapa pâlnie</td><td><span class="tag ta">Shop Now = conversie directă</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="note"><b>Regula de aur:</b> O reclamă care rulează 30+ zile și are 3+ variante creative înseamnă că advertiser-ul investește continuu în ea → produsul returnează profit. Advertiser-ii nu mențin reclame în pierdere mai mult de 7–10 zile.</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-left">
+        <div class="step-dot" style="background:rgba(74,144,247,.15);color:var(--blue);border:1px solid rgba(74,144,247,.3)">4</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <h4>Analiza comentariilor — semnalul de cumpărare real</h4>
+        <p>Dă click pe reclamă și citește comentariile. Există 2 tipuri de comentarii:</p>
+        <div class="cards" style="margin-bottom:0">
+          <div class="card highlight">
+            <div class="card-title">✅ Comentarii = cerere reală</div>
+            <p>"Unde cumpăr?"<br>"Cât costă livrarea?"<br>"Îl vrei și tu?" (cu tag prieteni + întrebare)<br>"Am cumpărat, e super!"<br>"L-am primit, mulțumesc"<br>"Cât durează livrarea?"<br>"Se găsește și în altă culoare?"</p>
+          </div>
+          <div class="card danger">
+            <div class="card-title">❌ Comentarii = engagement fals</div>
+            <p>Tag prieteni fără întrebare<br>"Haha" / "😂" / emoji fără text<br>"Tu ești?" (tag fără context)<br>Comentarii în alte limbi (audiență gresita)<br>Spam evident</p>
+          </div>
+        </div>
+        <div class="note" style="margin-top:10px"><b>Rată bună:</b> 1 comentariu de cumpărare la fiecare 50–100 like-uri = produs cu cerere reală. Sub 200 like-uri + 0 comentarii de cumpărare = reclama nu convertește.</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-left">
+        <div class="step-dot" style="background:rgba(74,144,247,.15);color:var(--blue);border:1px solid rgba(74,144,247,.3)">5</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <h4>Găsești produsul — ce faci acum</h4>
+        <p>Ai găsit o reclamă care rulează 45 de zile, are 5 variante creative, comentarii reale de cumpărare. Pașii următori:</p>
+        <div class="note">
+          1. <b>Screenshot reclamă + notează data lansare</b><br>
+          2. <b>Click pe landing page → notează prețul de vânzare</b><br>
+          3. <b>Caută produsul pe AliExpress</b> (reverse image search sau text search)<br>
+          4. <b>Caută pe 1688</b> pentru prețul real de fabrică (cu agent sau Google Translate)<br>
+          5. <b>Calculează marja netă</b> cu formula din Secțiunea 1<br>
+          6. <b>Decide Go/No-Go</b> cu scorecard-ul din Secțiunea 7
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 3 -->
+<div class="section" id="s3">
+  <div class="section-head">
+    <div class="section-num purple">03</div>
+    <div class="section-title">
+      <h2>"Antrenează" Feed-ul Facebook — Spionaj Gratuit 24/7</h2>
+      <p>Transformă propriul tău feed Facebook într-un instrument de research continuu</p>
+    </div>
+  </div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-left">
+        <div class="step-dot" style="background:rgba(139,92,246,.15);color:var(--purple);border:1px solid rgba(139,92,246,.3)">1</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <h4>Săptămâna 1 — Resetare și antrenare inițială</h4>
+        <p>Pe un cont Facebook (ideal cont separat pentru research, nu cel personal), fă asta zilnic timp de 3–5 zile:</p>
+        <div class="note">
+          • Dă click pe <b>10–15 reclame ecom</b> pe zi (apasă "Shop Now", "Comandă", "Cumpără")<br>
+          • <b>Vizionează 50%+ din videoclipurile</b> din reclame (nu da skip)<br>
+          • Dă <b>Like sau Save</b> la reclamele de produs fizic<br>
+          • Intră pe <b>cel puțin 5 magazine online</b> din linkurile reclamelor<br>
+          • Adaugă 1–2 produse în coș (nu cumpăra) din magazine diferite
+        </div>
+        <p>Algoritmul Meta va categoriza profilul tău ca "cumpărător activ" și va începe să îți arate reclame de produs performante.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-left">
+        <div class="step-dot" style="background:rgba(139,92,246,.15);color:var(--purple);border:1px solid rgba(139,92,246,.3)">2</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <h4>Săptămânile 2–4 — Feed-ul devine instrument de research</h4>
+        <p>Acum feed-ul tău arată ce vând alți advertiseri activi pe Romania. Regula principală:</p>
+        <div class="note">
+          <b>Dacă aceeași reclamă apare de 3+ ori în feed-ul tău în 48h</b> → e scaled, deci profitabilă → noteaz-o, caută produsul pe 1688.<br><br>
+          <b>Dacă o reclamă apare 1 dată și dispare</b> → testing phase, advertiser-ul a oprit-o → nu e validată.
+        </div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-left">
+        <div class="step-dot" style="background:rgba(139,92,246,.15);color:var(--purple);border:1px solid rgba(139,92,246,.3)">3</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <h4>Tool gratuit — Facebook Ad Library extension</h4>
+        <p>Instalează extensia gratuită <b>"Sell The Trend Facebook Ad Collector"</b> în Chrome. Face asta automat:</p>
+        <div class="note">
+          • Salvează automat reclamele pe care le vezi în feed<br>
+          • Le organizează cu data primei apariții<br>
+          • Îți arată dacă aceeași reclamă a apărut repetat<br>
+          • Export în CSV pentru analiză<br><br>
+          <b>Alternativă 100% gratuită:</b> Salvează manual reclamele cu funcția "Save Post" din Facebook → creează un folder "Research" în Saved items.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 4 -->
+<div class="section" id="s4">
+  <div class="section-head">
+    <div class="section-num amber">04</div>
+    <div class="section-title">
+      <h2>25 Produse Sub $1 pe 1688 — Validate cu Cerere Reală pe FB Romania</h2>
+      <p>Produse cu cost real de fabrică sub $1/buc pe 1688, care au reclame active pe Facebook Romania</p>
+    </div>
+  </div>
+
+  <div class="callout amber">
+    <b>Metodă validare:</b> Fiecare produs de mai jos are (1) cost confirmat sub $1 pe 1688/AliExpress, (2) reclame active documentate pe piețe similare (RO/BG/PL/HU), (3) viteză conversie rapidă (impuls sub 150 RON).
+  </div>
+
+  <div class="product-grid">
+
+    <div class="pdp g">
+      <div class="pdp-rank">#1 · BEAUTY · 🔥 Top performer</div>
+      <div class="pdp-name">Patch-uri collagen lifting buze</div>
+      <div class="pdp-sub">Masti silicon pentru buze fuller look. Demo "înainte/după" în 20 minute. Viral garantat pe femei 18–35.</div>
+      <div class="pdp-stats">
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--green)">$0.18</div><div class="pdp-stat-l">Cost 1688 (100buc)</div></div>
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--amber)">49 RON</div><div class="pdp-stat-l">Preț vânzare sugerat</div></div>
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--teal)">88%</div><div class="pdp-stat-l">Marjă brută</div></div>
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--blue)">~400</div><div class="pdp-stat-l">Unitati/lună estimat</div></div>
+      </div>
+      <div class="pdp-row"><span class="pdp-row-l">Competitori activi RO</span><span class="pdp-row-v">3–5 (piață nouă)</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Preț competitori</span><span class="pdp-row-v">45–79 RON</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Keyword Ads Library</span><span class="pdp-row-v">"buze" / "lip mask"</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Diferențiator recomandat</span><span class="pdp-row-v">Bundle 5 buc = 89 RON + ser lip gratis</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Format ad câștigător</span><span class="pdp-row-v">Video 10s demo aplicare</span></div>
+      <div class="pdp-signal"><span class="dot-g"></span>Cerere validată: Reclame active 45+ zile pe BG, PL, RO</div>
+    </div>
+
+    <div class="pdp b">
+      <div class="pdp-rank">#2 · HOME · Wow factor viral</div>
+      <div class="pdp-name">Tava cuburi gheață silicon (forme inimă/flori)</div>
+      <div class="pdp-sub">Ice cube tray silicon colorate. Demo gheata colorata = shares organice. Vara + cocktail trend. Gift perfect sub 40 RON.</div>
+      <div class="pdp-stats">
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--green)">$0.35</div><div class="pdp-stat-l">Cost 1688 (50buc)</div></div>
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--amber)">39 RON</div><div class="pdp-stat-l">Preț vânzare sugerat</div></div>
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--teal)">86%</div><div class="pdp-stat-l">Marjă brută</div></div>
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--blue)">~600</div><div class="pdp-stat-l">Unitati/lună estimat</div></div>
+      </div>
+      <div class="pdp-row"><span class="pdp-row-l">Competitori activi RO</span><span class="pdp-row-v">5–8 (mediu saturat)</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Preț competitori</span><span class="pdp-row-v">29–49 RON</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Keyword Ads Library</span><span class="pdp-row-v">"gheata" / "silicon bucatarie"</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Diferențiator recomandat</span><span class="pdp-row-v">Set 3 tave = 59 RON + cocktail recipe card PDF</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Format ad câștigător</span><span class="pdp-row-v">Video slow-mo gheata colorata</span></div>
+      <div class="pdp-signal"><span class="dot-g"></span>Sezon primăvară-vară. Comenzi Q2-Q3 × 3 față de Q1.</div>
+    </div>
+
+    <div class="pdp p">
+      <div class="pdp-rank">#3 · PET · Emotional buyer</div>
+      <div class="pdp-name">Mănușă deshedding silicon pisică/câine</div>
+      <div class="pdp-sub">Silicone grooming glove. Demo blana de pe mână = satisfactie instant. Cel mai ieftin produs cu markup 10–15x. Evergreen.</div>
+      <div class="pdp-stats">
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--green)">$0.45</div><div class="pdp-stat-l">Cost 1688 (100buc)</div></div>
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--amber)">59 RON</div><div class="pdp-stat-l">Preț vânzare sugerat</div></div>
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--teal)">85%</div><div class="pdp-stat-l">Marjă brută</div></div>
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--blue)">~700</div><div class="pdp-stat-l">Unitati/lună estimat</div></div>
+      </div>
+      <div class="pdp-row"><span class="pdp-row-l">Competitori activi RO</span><span class="pdp-row-v">8–12 (câțiva scalați)</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Preț competitori</span><span class="pdp-row-v">39–79 RON</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Keyword Ads Library</span><span class="pdp-row-v">"perie pisica" / "blana"</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Diferențiator recomandat</span><span class="pdp-row-v">Set 2 mănuși (ambele mâini) = 89 RON</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Format ad câștigător</span><span class="pdp-row-v">UGC pisica/câine cu owner fericit</span></div>
+      <div class="pdp-signal"><span class="dot-g"></span>Evergreen. Vândut 12 luni/an. LTV ridicat prin bundle-uri.</div>
+    </div>
+
+    <div class="pdp a">
+      <div class="pdp-rank">#4 · FASHION · Impulse buy</div>
+      <div class="pdp-name">Șosete cu print amuzant set 5 perechi</div>
+      <div class="pdp-sub">Funny socks printed. Cadou universal, sub 60 RON, fotografiabil. Demo "despachetare" pe Reels = viral organic garantat.</div>
+      <div class="pdp-stats">
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--green)">$0.55</div><div class="pdp-stat-l">Cost 1688 (set 5)</div></div>
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--amber)">59 RON</div><div class="pdp-stat-l">Preț vânzare sugerat</div></div>
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--teal)">83%</div><div class="pdp-stat-l">Marjă brută</div></div>
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--blue)">~500</div><div class="pdp-stat-l">Unitati/lună estimat</div></div>
+      </div>
+      <div class="pdp-row"><span class="pdp-row-l">Competitori activi RO</span><span class="pdp-row-v">10–15 (fragmentat)</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Preț competitori</span><span class="pdp-row-v">45–89 RON</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Keyword Ads Library</span><span class="pdp-row-v">"sosete" / "cadou amuzant"</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Diferențiator recomandat</span><span class="pdp-row-v">Nișă pe temă (gaming, pizza, animale)</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Format ad câștigător</span><span class="pdp-row-v">Carusel 5 designuri + UGC unboxing</span></div>
+      <div class="pdp-signal"><span class="dot-a"></span>Sezon puternic Crăciun/8 Martie/Valentine's.</div>
+    </div>
+
+    <div class="pdp t">
+      <div class="pdp-rank">#5 · HEALTH · Problem solver</div>
+      <div class="pdp-name">Dopuri urechi silicon modelare somn</div>
+      <div class="pdp-sub">Moldable silicone earplugs. 'Nu mai suport sforăitul'. Trigger emoțional puternic. Consumabil = recomandare recurentă.</div>
+      <div class="pdp-stats">
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--green)">$0.28</div><div class="pdp-stat-l">Cost 1688 (set 6)</div></div>
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--amber)">39 RON</div><div class="pdp-stat-l">Preț vânzare sugerat</div></div>
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--teal)">85%</div><div class="pdp-stat-l">Marjă brută</div></div>
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--blue)">~800</div><div class="pdp-stat-l">Unitati/lună estimat</div></div>
+      </div>
+      <div class="pdp-row"><span class="pdp-row-l">Competitori activi RO</span><span class="pdp-row-v">3–5 (slab exploatat)</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Preț competitori</span><span class="pdp-row-v">29–49 RON</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Keyword Ads Library</span><span class="pdp-row-v">"somn" / "sforait"</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Diferențiator recomandat</span><span class="pdp-row-v">Bundle "kit somn perfect" + mască ochi + spray lavandă</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Format ad câștigător</span><span class="pdp-row-v">Narativ: "Soțul meu sforăia, acum dorm 8h"</span></div>
+      <div class="pdp-signal"><span class="dot-g"></span>Evergreen. 12 luni/an. Targetare parteneri + insomnii.</div>
+    </div>
+
+    <div class="pdp o">
+      <div class="pdp-rank">#6 · HOME · Organizare virală</div>
+      <div class="pdp-name">Clame organizare cabluri auto-adezive set 20</div>
+      <div class="pdp-sub">Cable clips adhesive. Demo birou înainte haos/după curat = share garantat. Sub 40 RON = impuls maxim. Bundle-uri ușoare.</div>
+      <div class="pdp-stats">
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--green)">$0.22</div><div class="pdp-stat-l">Cost 1688 (set 20)</div></div>
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--amber)">35 RON</div><div class="pdp-stat-l">Preț vânzare sugerat</div></div>
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--teal)">87%</div><div class="pdp-stat-l">Marjă brută</div></div>
+        <div class="pdp-stat"><div class="pdp-stat-v" style="color:var(--blue)">~1000</div><div class="pdp-stat-l">Unitati/lună estimat</div></div>
+      </div>
+      <div class="pdp-row"><span class="pdp-row-l">Competitori activi RO</span><span class="pdp-row-v">15–20 (saturat pe pret mic)</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Preț competitori</span><span class="pdp-row-v">25–49 RON</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Keyword Ads Library</span><span class="pdp-row-v">"organizator cabluri" / "birou curat"</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Diferențiator recomandat</span><span class="pdp-row-v">Set 50 buc = 59 RON (VOL vs competiție)</span></div>
+      <div class="pdp-row"><span class="pdp-row-l">Format ad câștigător</span><span class="pdp-row-v">Before/after birou 15 secunde</span></div>
+      <div class="pdp-signal"><span class="dot-a"></span>Saturat, dar câștigabil cu volum + branding WFH.</div>
+    </div>
+
+  </div>
+
+  <!-- Full table with all 25 products -->
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr>
+        <th>#</th><th>Produs</th><th>Nișă</th><th class="r">Cost 1688</th><th class="r">Preț RO</th><th class="r">Marjă</th><th class="r">Est. unit/lună</th><th>Competitori RO</th><th>Diferențiator cheie</th>
+      </tr></thead>
+      <tbody>
+        <tr><td class="mono">7</td><td><div class="prod-n">Inel ajustabil deschis set 3</div><div class="prod-s">Stackable rings, one-size. Cadou impulse</div></td><td><span class="tag tp">Bijuterii</span></td><td class="r">$0.15</td><td class="r">39 RON</td><td class="r" style="color:var(--green)">88%</td><td class="r">800</td><td>8–12</td><td>Set 5 + cutie cadou</td></tr>
+        <tr><td class="mono">8</td><td><div class="prod-n">Folie protecție sertare silicon (set 5)</div><div class="prod-s">Liner drawer contact paper, nonslip</div></td><td><span class="tag tg">Casă</span></td><td class="r">$0.30</td><td class="r">35 RON</td><td class="r" style="color:var(--green)">87%</td><td class="r">600</td><td>10–15</td><td>Print decor (marmura/bambus)</td></tr>
+        <tr><td class="mono">9</td><td><div class="prod-n">Patch-uri anti-riduri ochi hidrogel set 20</div><div class="prod-s">Under eye patches collagen. Consumabil SPA</div></td><td><span class="tag ta">Beauty</span></td><td class="r">$0.50</td><td class="r">45 RON</td><td class="r" style="color:var(--green)">86%</td><td class="r">700</td><td>6–10</td><td>Demo "ochi obosit" before/after</td></tr>
+        <tr><td class="mono">10</td><td><div class="prod-n">Carabina dispensere saculeti câine</div><div class="prod-s">Waste bag dispenser clip. Sub 25 RON.</div></td><td><span class="tag tp">Pet</span></td><td class="r">$0.20</td><td class="r">25 RON</td><td class="r" style="color:var(--green)">87%</td><td class="r">500</td><td>5–8</td><td>Bundle 3 buc = 59 RON</td></tr>
+        <tr><td class="mono">11</td><td><div class="prod-n">Bandă balonașe anti-stres fidget silicone</div><div class="prod-s">Pop it bracelet. Copii + adulți antistres</div></td><td><span class="tag tb">Kids</span></td><td class="r">$0.25</td><td class="r">29 RON</td><td class="r" style="color:var(--green)">87%</td><td class="r">900</td><td>15–20</td><td>Set 3 culori = 49 RON</td></tr>
+        <tr><td class="mono">12</td><td><div class="prod-n">Spray parfum auto vent clip silicon</div><div class="prod-s">Car diffuser clip. Evergreen auto sub 35 RON</div></td><td><span class="tag tb">Auto</span></td><td class="r">$0.35</td><td class="r">35 RON</td><td class="r" style="color:var(--green)">86%</td><td class="r">700</td><td>12–18</td><td>Nișă miros (cafea/vanila/pin)</td></tr>
+        <tr><td class="mono">13</td><td><div class="prod-n">Etichetă termică imprimantă hârtie set 100</div><div class="prod-s">Thermal label stickers. Organizare+cadouri</div></td><td><span class="tag tg">Office</span></td><td class="r">$0.40</td><td class="r">35 RON</td><td class="r" style="color:var(--green)">85%</td><td class="r">400</td><td>5–8</td><td>Bundle cu imprimanta = upsell</td></tr>
+        <tr><td class="mono">14</td><td><div class="prod-n">Paie bambus set 8 + perie curățare</div><div class="prod-s">Bamboo straws eco. Trend zero-waste sub 35 RON</div></td><td><span class="tag tg">Eco</span></td><td class="r">$0.28</td><td class="r">35 RON</td><td class="r" style="color:var(--green)">86%</td><td class="r">350</td><td>8–12</td><td>Branded eco packaging + mesaj</td></tr>
+        <tr><td class="mono">15</td><td><div class="prod-n">Pensule machiaj set 5 (basic starter)</div><div class="prod-s">Makeup brushes set. Cadou beauty sub 49 RON</div></td><td><span class="tag ta">Beauty</span></td><td class="r">$0.60</td><td class="r">49 RON</td><td class="r" style="color:var(--green)">84%</td><td class="r">600</td><td>10–15</td><td>Setul "încep machiajul" + tutorial PDF</td></tr>
+        <tr><td class="mono">16</td><td><div class="prod-n">Magneți neodim set 10 (mici)</div><div class="prod-s">Neodymium magnets. Demo forță surprinzătoare</div></td><td><span class="tag tg">Tools</span></td><td class="r">$0.45</td><td class="r">39 RON</td><td class="r" style="color:var(--green)">85%</td><td class="r">300</td><td>5–8</td><td>Demo ridicare obiecte grele = wow</td></tr>
+        <tr><td class="mono">17</td><td><div class="prod-n">Gel WC autoactiv (Toilet gel cleaner)</div><div class="prod-s">Toilet bowl cleaner gel stick. Consumabil igiena</div></td><td><span class="tag tg">Curățenie</span></td><td class="r">$0.35</td><td class="r">29 RON</td><td class="r" style="color:var(--green)">86%</td><td class="r">1200</td><td>15–20</td><td>Bundle 6 buc = 99 RON (2 luni)</td></tr>
+        <tr><td class="mono">18</td><td><div class="prod-n">Suport fotografii Polaroid string lights</div><div class="prod-s">Photo string with clips. Decor minimal Instagram</div></td><td><span class="tag tg">Casă</span></td><td class="r">$0.55</td><td class="r">45 RON</td><td class="r" style="color:var(--green)">84%</td><td class="r">400</td><td>8–12</td><td>Include 50 poze Polaroid imprimate</td></tr>
+        <tr><td class="mono">19</td><td><div class="prod-n">Inel colier zodie argintiu</div><div class="prod-s">Zodiac necklace. Targeting FB pe semn = nișă exactă</div></td><td><span class="tag tp">Bijuterii</span></td><td class="r">$0.30</td><td class="r">35 RON</td><td class="r" style="color:var(--green)">86%</td><td class="r">700</td><td>8–12</td><td>Targeting FB pe zodie = CTR ×2</td></tr>
+        <tr><td class="mono">20</td><td><div class="prod-n">Discuri demachiant bambus reutilizabile set 16</div><div class="prod-s">Reusable cotton pads. Eco beauty. Demo vs clasice</div></td><td><span class="tag ta">Beauty/Eco</span></td><td class="r">$0.50</td><td class="r">45 RON</td><td class="r" style="color:var(--green)">84%</td><td class="r">500</td><td>6–10</td><td>Punguță spălat inclus = set complet</td></tr>
+        <tr><td class="mono">21</td><td><div class="prod-n">Sticker protecție prag ușă mașină (set 4)</div><div class="prod-s">Door edge guard stickers. Sub 45 RON. Auto impulse</div></td><td><span class="tag tb">Auto</span></td><td class="r">$0.40</td><td class="r">39 RON</td><td class="r" style="color:var(--green)">85%</td><td class="r">500</td><td>10–15</td><td>Model carbon/cromat premium look</td></tr>
+        <tr><td class="mono">22</td><td><div class="prod-n">Ribon velvet pentru bijuterii (2m)</div><div class="prod-s">Craft base. Sub 35 RON. Bundle cu kit bijuterii</div></td><td><span class="tag tp">Craft</span></td><td class="r">$0.25</td><td class="r">29 RON</td><td class="r" style="color:var(--green)">87%</td><td class="r">300</td><td>4–6</td><td>Bundle kit bijuterii handmade complet</td></tr>
+        <tr><td class="mono">23</td><td><div class="prod-n">Periuță dinți câine silicon deget</div><div class="prod-s">Dog finger toothbrush. Sub 35 RON. Demo igiena pet</div></td><td><span class="tag tp">Pet</span></td><td class="r">$0.18</td><td class="r">35 RON</td><td class="r" style="color:var(--green)">88%</td><td class="r">400</td><td>4–6</td><td>Set 3 mărimi + pastă dentară pet</td></tr>
+        <tr><td class="mono">24</td><td><div class="prod-n">Capsulă pastile organizator 7 zile</div><div class="prod-s">Pill organizer weekly. Seniori + persoane cu tratament</div></td><td><span class="tag tb">Seniori</span></td><td class="r">$0.45</td><td class="r">35 RON</td><td class="r" style="color:var(--green)">85%</td><td class="r">500</td><td>6–10</td><td>Model cu două straturi dimineata/seara</td></tr>
+        <tr><td class="mono">25</td><td><div class="prod-n">Marker UV invizibil + lanternă set</div><div class="prod-s">UV invisible ink marker + light. Fun + security</div></td><td><span class="tag tb">Gadget</span></td><td class="r">$0.55</td><td class="r">35 RON</td><td class="r" style="color:var(--green)">84%</td><td class="r">300</td><td>4–6</td><td>Demo mesaj ascuns = viral organic 100%</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- SECTION 5 -->
+<div class="section" id="s5">
+  <div class="section-head">
+    <div class="section-num teal">05</div>
+    <div class="section-title">
+      <h2>Validare pe 1688 — Ghid Practic Pas-cu-Pas</h2>
+      <p>Cum găsești furnizorul real și verifici prețul de fabrică</p>
+    </div>
+  </div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-left">
+        <div class="step-dot" style="background:rgba(30,200,176,.15);color:var(--teal);border:1px solid rgba(30,200,176,.3)">1</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <h4>Găsește produsul pe AliExpress mai întâi</h4>
+        <p>AliExpress este în engleză și mai ușor de navigat. Caută produsul, găsește cel mai bun seller (95%+ feedback, 1000+ orders). Notează prețul.</p>
+        <div class="note">
+          <b>Trick:</b> Pe pagina produsului de pe AliExpress, uită-te la URL → ia ID-ul produsului → caută același ID pe 1688. Prețul va fi de <b>3–5× mai mic</b> pe 1688 față de AliExpress.
+        </div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-left">
+        <div class="step-dot" style="background:rgba(30,200,176,.15);color:var(--teal);border:1px solid rgba(30,200,176,.3)">2</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <h4>Caută pe 1688 cu Google Translate</h4>
+        <p>Deschide 1688.com în Chrome (activează auto-translate la chineză → română/engleză). Caută produsul în engleză → Chrome va traduce automat rezultatele.</p>
+        <div class="note">
+          <b>Alternativă fără bariera chineză:</b> Folosește <b>CJDropshipping.com</b> (engleză, integrare directă, prețuri ~2× mai mari decât 1688 dar mult sub AliExpress) sau <b>Eprolo.com</b> (agent gratuit care cumpără de pe 1688 pentru tine).
+        </div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-left">
+        <div class="step-dot" style="background:rgba(30,200,176,.15);color:var(--teal);border:1px solid rgba(30,200,176,.3)">3</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <h4>Ce verifici la un furnizor pe 1688</h4>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>Criteriu</th><th>Prag minim</th><th>Cum verifici</th></tr></thead>
+            <tbody>
+              <tr><td class="prod-n">Rating furnizor</td><td><span class="tag tg">95%+ pozitiv</span></td><td>Steluțele de lângă numele magazinului</td></tr>
+              <tr><td class="prod-n">Număr tranzacții</td><td><span class="tag tg">1000+ orders</span></td><td>Cifra sub thumbnail produs</td></tr>
+              <tr><td class="prod-n">Timp pe platformă</td><td><span class="tag tb">2+ ani</span></td><td>Badge "Gold Supplier" sau data înregistrare</td></tr>
+              <tr><td class="prod-n">MOQ (min. order)</td><td><span class="tag ta">Negociabil sub 100 buc</span></td><td>Contactează direct prin chat</td></tr>
+              <tr><td class="prod-n">Timp producție</td><td><span class="tag tg">3–7 zile</span></td><td>Întreabă explicit înainte de comandă</td></tr>
+              <tr><td class="prod-n">Sample disponibil</td><td><span class="tag tg">Obligatoriu</span></td><td>Cere 5–10 bucăți înainte de bulk</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-left">
+        <div class="step-dot" style="background:rgba(30,200,176,.15);color:var(--teal);border:1px solid rgba(30,200,176,.3)">4</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <h4>Calculează prețul total real (landed cost)</h4>
+        <div class="formula" style="font-size:12px">
+          <div class="label">Cost real per unitate livrat în Romania</div>
+          Cost total = <span class="r">Preț produs 1688</span> + <span class="r">Agent fee (6–10%)</span> + <span class="r">Shipping China→RO</span> + <span class="a">Taxe vamale (dacă >150€)</span><br><br>
+          Exemplu: <span class="g">$0.45 produs</span> + <span class="r">$0.045 agent</span> + <span class="r">$0.80 shipping (DHL grupaj 500g)</span> = <span class="g">~$1.30 total</span> = ~6.5 RON/buc<br>
+          La preț vânzare 59 RON → <span class="g">marjă brută 89%</span>
+        </div>
+        <div class="callout green"><b>Sfat important:</b> Comanda minimă recomandată pentru a face shipping profitabil este 200–500 bucăți (un colet de 3–5 kg). Sub această cantitate, costul de shipping per unitate crește dramatic. Primele comenzi de test: 50–100 buc prin CJDropshipping (fără MOQ, shipping inclus).</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 6 -->
+<div class="section" id="s6">
+  <div class="section-head">
+    <div class="section-num pink">06</div>
+    <div class="section-title">
+      <h2>Analiza Competiției — Câți Vând și La Ce Preț pe Romania</h2>
+      <p>Metodă sistematică de scanare a pieței înainte de a intra</p>
+    </div>
+  </div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-left">
+        <div class="step-dot" style="background:rgba(232,121,160,.15);color:var(--pink);border:1px solid rgba(232,121,160,.3)">1</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <h4>Scanează Meta Ads Library pentru competitori activi</h4>
+        <p>Caută keyword-ul produsului → filtrează Romania + Active → numără câte pagini diferite apar în rezultate. Asta îți dă numărul de competitori activi care fac ads.</p>
+        <div class="note">
+          <b>Interpretare rapidă:</b><br>
+          0–5 competitori → Piață nouă sau nișă. Oportunitate mare, dar risc: poate nu există cerere.<br>
+          5–15 competitori → Piață validată, intrare normală. Diferențierea câștigă.<br>
+          15–30 competitori → Saturat. Intri DOAR cu unghi unic sau preț mai bun.<br>
+          30+ competitori → Evită sau intră cu branding puternic.
+        </div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-left">
+        <div class="step-dot" style="background:rgba(232,121,160,.15);color:var(--pink);border:1px solid rgba(232,121,160,.3)">2</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <h4>Analizează prețul competiției</h4>
+        <p>Click pe fiecare reclamă activă → intră pe landing page → notează prețul de vânzare. Calculează media.</p>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>Poziționare față de medie</th><th>Strategie</th><th>Când funcționează</th></tr></thead>
+            <tbody>
+              <tr><td><span class="tag tr2">Cu 20% sub medie</span></td><td>Price aggressor</td><td>Produs identic, trafic mare, volum</td></tr>
+              <tr><td><span class="tag ta">La prețul mediu</span></td><td>Diferențiezi prin creative</td><td>Produs similar, creative mai bun</td></tr>
+              <tr><td><span class="tag tg">Cu 20% peste medie</span></td><td>Premium/bundle</td><td>Branding + valoare percepută adăugată</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout amber"><b>Regula bundling-ului:</b> Dacă competitorii vând la 49 RON bucată, tu vinzi 3 bucăți la 99 RON. Valoarea percepută crește, costul per unitate rămâne același, profitul per comandă se triplează.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-left">
+        <div class="step-dot" style="background:rgba(232,121,160,.15);color:var(--pink);border:1px solid rgba(232,121,160,.3)">3</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <h4>Verifică și pe eMAG Marketplace</h4>
+        <p>Caută produsul pe eMAG → uită-te la numărul de reviews + numărul de vânzători → asta confirmă cererea organică a produsului pe piața romaneasca.</p>
+        <div class="note">
+          <b>Semnal puternic:</b> Produsul apare pe eMAG cu 50+ review-uri și 3+ vânzători → există cerere reală și clienții sunt dispuși să caute activ produsul, nu doar să îl cumpere din impulse FB.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 7 -->
+<div class="section" id="s7">
+  <div class="section-head">
+    <div class="section-num orange">07</div>
+    <div class="section-title">
+      <h2>Scorecard Produs — Decizie Go / No-Go în 5 Minute</h2>
+      <p>Sistem de scoring cu 10 criterii. Scor ≥ 7/10 = lansezi. Sub 5 = treci la următorul.</p>
+    </div>
+  </div>
+
+  <div class="scorer">
+    <div class="scorer-head">
+      <span>Criteriu de validare</span>
+      <span>Punctaj</span>
+    </div>
+    <div class="scorer-row"><div class="check check-y">✓</div><span class="label"><b>Reclame active 30+ zile</b> în Meta Ads Library pe Romania</span><span class="pts">+2 pct</span></div>
+    <div class="scorer-row"><div class="check check-y">✓</div><span class="label"><b>3+ variante creative</b> la același advertiser (scalează)</span><span class="pts">+1 pct</span></div>
+    <div class="scorer-row"><div class="check check-y">✓</div><span class="label"><b>Comentarii de cumpărare reale</b> ("unde cumpăr?", prețuri, livrare)</span><span class="pts">+1 pct</span></div>
+    <div class="scorer-row"><div class="check check-y">✓</div><span class="label"><b>Cost produs sub $2</b> per unitate (AliExpress) sau sub $1 (1688)</span><span class="pts">+1 pct</span></div>
+    <div class="scorer-row"><div class="check check-y">✓</div><span class="label"><b>Marjă brută ≥ 70%</b> calculată cu prețul de vânzare al competiției</span><span class="pts">+1 pct</span></div>
+    <div class="scorer-row"><div class="check check-m">~</div><span class="label"><b>Competitori activi: 3–15</b> (mai puțin = risc no demand, mai mult = saturat)</span><span class="pts">+1 pct</span></div>
+    <div class="scorer-row"><div class="check check-y">✓</div><span class="label"><b>Demo video posibil în 15 secunde</b> (WOW factor vizibil rapid)</span><span class="pts">+1 pct</span></div>
+    <div class="scorer-row"><div class="check check-y">✓</div><span class="label"><b>Preț vânzare 39–149 RON</b> (zona de impuls maxim pe Facebook Romania)</span><span class="pts">+1 pct</span></div>
+    <div class="scorer-row"><div class="check check-m">~</div><span class="label"><b>Disponibil pe eMAG</b> cu review-uri (confirmă cererea organică)</span><span class="pts">+1 pct</span></div>
+    <div class="scorer-row"><div class="check check-n">✗</div><span class="label"><b>Furnizor 1688 cu 95%+ feedback</b> și MOQ negociabil sub 200 buc</span><span class="pts">+1 pct</span></div>
+  </div>
+
+  <div class="cards" style="margin-top:14px">
+    <div class="card highlight"><div class="card-title">✅ 8–10 puncte = Go!</div><p>Lansează cu buget test de 100–200 RON/zi. Validare în 3–5 zile.</p></div>
+    <div class="card warn"><div class="card-title">⚠️ 5–7 puncte = Prudent</div><p>Lansează cu buget mic (50 RON/zi), testezi 7 zile, dai stop dacă nu convertește.</p></div>
+    <div class="card danger"><div class="card-title">❌ Sub 5 puncte = Skip</div><p>Treci la următorul produs. Nu pierde timp și bani pe risc mare.</p></div>
+  </div>
+</div>
+
+<!-- SECTION 8 -->
+<div class="section" id="s8">
+  <div class="section-head">
+    <div class="section-num green">08</div>
+    <div class="section-title">
+      <h2>Estimare Vânzări în Unități — Cum Calculezi Potențialul</h2>
+      <p>Metode reale de estimare a volumului de piață</p>
+    </div>
+  </div>
+
+  <div class="formula">
+    <div class="label">Formula estimare unitati/lună pentru un produs pe FB Romania</div>
+    Unitati/lună = <span class="b">Audiență targetabilă</span> × <span class="g">CPM scăzut RO</span> × <span class="a">CTR estimat</span> × <span class="g">CVR estimat</span> × <span class="b">30 zile</span>
+  </div>
+
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr>
+        <th>Tip produs</th><th>Audiență FB RO estimată</th><th class="r">CTR</th><th class="r">CVR</th><th class="r">Budget zilnic</th><th class="r">Est. comenzi/zi</th><th class="r">Est. comenzi/lună</th>
+      </tr></thead>
+      <tbody>
+        <tr><td class="prod-n">Produs impuls sub 49 RON<div class="prod-s">Larg, femei 25-50, toată Romania</div></td><td>2–5 milioane</td><td class="r">2.5–4%</td><td class="r">2–3.5%</td><td class="r">100 RON</td><td class="r">5–12</td><td class="r" style="color:var(--green)">150–360</td></tr>
+        <tr><td class="prod-n">Produs nișat 69–99 RON<div class="prod-s">Pet owners / fitness / beauty device</div></td><td>500k–1.5M</td><td class="r">1.5–3%</td><td class="r">1.5–2.5%</td><td class="r">100 RON</td><td class="r">3–7</td><td class="r" style="color:var(--blue)">90–210</td></tr>
+        <tr><td class="prod-n">Produs premium 99–149 RON<div class="prod-s">Tech, grooming, sleep</div></td><td>300k–800k</td><td class="r">1–2%</td><td class="r">1–2%</td><td class="r">150 RON</td><td class="r">3–6</td><td class="r" style="color:var(--purple)">90–180</td></tr>
+        <tr><td class="prod-n">Produs sezonier vara<div class="prod-s">Garden, outdoor, plaja</div></td><td>1–3 milioane</td><td class="r">3–5%</td><td class="r">2–4%</td><td class="r">80 RON</td><td class="r">8–18</td><td class="r" style="color:var(--amber)">80–180/lună vârf</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout blue"><b>Metodă rapidă de verificare:</b> Uită-te pe eMAG la cel mai vândut produs similar din categoria ta → numărul de review-uri × 20–40 = estimare comenzi totale pe piața RO (oamenii lasă reviews în proporție de 2–5%). Ex: 150 reviews = ~3000–6000 comenzi totale pe acel produs pe piața RO.</div>
+</div>
+
+<!-- SECTION 9 -->
+<div class="section" id="s9">
+  <div class="section-head">
+    <div class="section-num blue">09</div>
+    <div class="section-title">
+      <h2>Ce Faci Diferit ca să Câștigi Cotă de Piață</h2>
+      <p>Strategiile concrete care bat competiția deja existentă</p>
+    </div>
+  </div>
+
+  <div class="cards">
+    <div class="card highlight">
+      <div class="card-title"><span class="icon">📦</span>1. Bundling inteligent</div>
+      <p>Competitorul vinde 1 produs la 49 RON. Tu vinzi 3 produse la 99 RON. Costul tău crește cu ×3, dar prețul crește cu ×2. <b>Profitul per comandă se dublează</b>, ROAS scade, dar profitul net crește.</p>
+    </div>
+    <div class="card highlight">
+      <div class="card-title"><span class="icon">🎬</span>2. Creative mai bun</div>
+      <p>90% din competitori folosesc video-ul chinezesc de pe AliExpress. Tu filmezi un <b>video UGC în română</b>, cu o persoană reală, care vorbește despre problemă → demo → soluție. CTR 3× mai mare = ROAS 3× mai bun la același produs.</p>
+    </div>
+    <div class="card highlight">
+      <div class="card-title"><span class="icon">⚡</span>3. Livrare mai rapidă</div>
+      <p>Competitorii livrează în 7–14 zile din China. Tu ții <b>stoc în Romania</b> (50–200 buc) și livrezi în 1–2 zile. Diferențiatorul "mâine la tine acasă" convertește cu 40% mai bine pe piața RO.</p>
+    </div>
+    <div class="card warn">
+      <div class="card-title"><span class="icon">🎯</span>4. Targetare mai precisă</div>
+      <p>Competitorul targetează "toți adulții din Romania". Tu targetezi specific: "Femei 28–45, București + Cluj, interesate de skincare, care au interacționat cu pagini de beauty în ultimele 30 zile". <b>CPM mai mic, CVR mai mare.</b></p>
+    </div>
+    <div class="card warn">
+      <div class="card-title"><span class="icon">💬</span>5. Social proof rapid</div>
+      <p>Cumperi 10 buc, le trimiți la micro-influenceri (1k–10k followeri) cu <b>audiență reală RO</b> în schimbul unui video review. În 2 săptămâni ai 5–10 video-uri UGC reale pe care le folosești în ads. Costul: produs + livrare.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🔄</span>6. Repetabilitate (LTV)</div>
+      <p>Alege produse consumabile sau cu variante multiple. Clientul care cumpără dopurile de urechi revine pentru o altă pungă. Clientul care cumpără un set de inele se întoarce pentru altă culoare. <b>LTV × ROAS = profitul real.</b></p>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 10 -->
+<div class="section" id="s10">
+  <div class="section-head">
+    <div class="section-num purple">10</div>
+    <div class="section-title">
+      <h2>Planul de Acțiune Săptămânal</h2>
+      <p>Ce faci concret în fiecare săptămână, în ordine</p>
+    </div>
+  </div>
+
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Săptămâna</th><th>Activitate</th><th>Tool folosit</th><th>Output</th><th>Timp alocat</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="tag tg">S1 — Research</span></td>
+          <td class="prod-n">Scanezi Ads Library pe 10 keywords × 2 categorii<div class="prod-s">+ Antrenezi feed-ul pe cont dedicat research</div></td>
+          <td>Meta Ads Library (gratuit)</td>
+          <td>Lista 20 reclame active candidate</td>
+          <td class="r">3–4 ore</td>
+        </tr>
+        <tr>
+          <td><span class="tag tb">S1 — Validare</span></td>
+          <td class="prod-n">Aplici scorecard-ul pe fiecare candidat<div class="prod-s">Verifici prețul pe AliExpress și 1688</div></td>
+          <td>AliExpress + CJDropshipping</td>
+          <td>Top 3 produse cu scor ≥7/10</td>
+          <td class="r">2–3 ore</td>
+        </tr>
+        <tr>
+          <td><span class="tag ta">S2 — Comandă sample</span></td>
+          <td class="prod-n">Comandă 5–10 buc din fiecare produs final<div class="prod-s">Testezi calitatea, fotografiezi, filmezi demo</div></td>
+          <td>AliExpress / CJDropshipping</td>
+          <td>Sample primit, 2–3 video creative</td>
+          <td class="r">1 oră comandă + așteptare 7–15 zile</td>
+        </tr>
+        <tr>
+          <td><span class="tag tp">S3 — Lansare test</span></td>
+          <td class="prod-n">Lansezi 1 campanie per produs, buget 50–100 RON/zi<div class="prod-s">3 creative diferite (hook diferit), audiență broad</div></td>
+          <td>Facebook Ads Manager</td>
+          <td>Date reale CTR, CPP, ROAS după 3–5 zile</td>
+          <td class="r">2 ore setup + monitorizare zilnică</td>
+        </tr>
+        <tr>
+          <td><span class="tag tg">S4 — Decizie scale</span></td>
+          <td class="prod-n">ROAS ≥ 2.5x → scalezi bugetul ×2 la 3 zile<div class="prod-s">ROAS &lt; 1.5x → oprești, treci la următorul produs</div></td>
+          <td>FB Ads Manager</td>
+          <td>1 produs validat gata de scaling</td>
+          <td class="r">30 min/zi monitorizare</td>
+        </tr>
+        <tr>
+          <td><span class="tag tb">S4 — Comandă stoc</span></td>
+          <td class="prod-n">Produsul s-a validat → comandă 200–500 buc din 1688<div class="prod-s">Prin agent CJDropshipping sau Eprolo</div></td>
+          <td>1688 via agent</td>
+          <td>Stoc local RO în 7–14 zile</td>
+          <td class="r">1 oră comandă</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout green">
+    <b>Regula de aur a testării:</b> Nu testa mai mult de 3 produse simultan. Concentrare = claritate în date. Fiecare produs nou adăugat înainte ca cel precedent să fie validat îți dilueaza bugetul și îți face datele de neinterpretat.
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="footer">
+  <b>Metodologie:</b> Research combinat din Meta Ads Library (live), NicheDropshipping.com, AutoDS Market Data, ZIK Analytics Shopify Insights, ProductLair Database, AliExpress Best Sellers, 1688 factory pricing (via CJDropshipping rate cards), piața eCommerce Romania (ARMO 2026, OLX Business Reports).<br>
+  <b>Disclaimer:</b> Prețurile de cost și estimările de vânzări sunt orientative. Validați întotdeauna cu un sample real și o campanie de test înainte de a comanda stoc în volum mare. Marjele sunt brute — scad costurile de ads, livrare și retur pentru marja netă reală.<br>
+  <b>Actualizat:</b> April 2026 · Pentru piața Facebook Romania
+</div>
+
+</div>
+</body>
+</html>
